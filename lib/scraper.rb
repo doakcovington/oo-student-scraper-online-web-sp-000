@@ -23,8 +23,8 @@ class Scraper
     binding.pry
     student_profile = {}
 
-    doc.css("div.social-icon-container.attributes.children").each do |social|
-      student_twitter = "#{social.attr('href')}"
+    doc.css("div.social-icon-container").children.css("a").each do |social|
+      student_twitter = "#{social.attributes('href')}"
       student_profile[:twitter] = student_twitter
     end#end of div.social-icon-container
     student_profile

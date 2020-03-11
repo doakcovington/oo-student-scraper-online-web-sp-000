@@ -24,7 +24,7 @@ class Scraper
 
     doc.css("div.social-icon-container").each do |social|
       student_twitter = "#{social.attr('href')}"
-      student_profile[:twitter]
+      student_profile[:twitter] = student_twitter
     end#end of div.social-icon-container
   end
 

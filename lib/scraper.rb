@@ -35,7 +35,7 @@ class Scraper
       end
     end#end of div.social-icon-container
     student_profile[:bio] = doc.css("div.bio-block.details-block").first.text
-    binding.pry
+    #binding.pry
     student_profile
   end
 

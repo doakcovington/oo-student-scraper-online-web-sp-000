@@ -8,6 +8,7 @@ class Student
   def initialize(student_hash)
     @@all << @name = student_hash[:name]
     @@all << @location = student_hash[:location]
+    binding.pry
   end
 
   def self.create_from_collection(students_array)

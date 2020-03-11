@@ -22,11 +22,11 @@ class Scraper
     doc = Nokogiri::HTML(open(profile_url))
     student_profile = {}
 
-    doc.css("div.social-icon-container a").each do |social|
-      student_twitter = "#{social.attr('href')}"
-      student_profile[:twitter] = student_twitter
+    #doc.css("div.social-icon-container").each do |social|
+      #student_twitter = "#{social.attr('href')}"
+      #student_profile[:twitter] = student_twitter
       binding.pry
-    end#end of div.social-icon-container
+    #end#end of div.social-icon-container
     student_profile
   end
 

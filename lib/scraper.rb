@@ -35,6 +35,7 @@ class Scraper
       end
     end#end of div.social-icon-container
     doc.css("div.descrition-holder")
+    binding.pry
     student_profile
   end
 

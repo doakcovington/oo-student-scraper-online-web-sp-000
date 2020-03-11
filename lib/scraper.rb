@@ -35,7 +35,6 @@ class Scraper
       end
     end#end of div.social-icon-container
     student_profile[:bio] = ("div.bio-content.content-holder div.description-holder p").text
-    binding.pry
     student_profile
   end
 

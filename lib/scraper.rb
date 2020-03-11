@@ -26,14 +26,11 @@ class Scraper
       links = social.attribute("href").value
       if links.include?("twitter")
         student_profile[:twitter] = links
-      end
-      if links.include?("linkedin")
+      elsif links.include?("linkedin")
         student_profile[:linkedin] = links
-      end
-      if links.include?("github")
+      elsif links.include?("github")
         student_profile[:github] = links
-      end
-      if links.include?("blog")
+      else links.include?("blog")
         student_profile[:blog] = links
       end
     end#end of div.social-icon-container

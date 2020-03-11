@@ -30,6 +30,9 @@ class Scraper
       if links.include?("linkedin")
         student_profile[:linkedin] = links
       end
+      if links.include?("bio")
+        student_profile[:bio]
+      end
     end#end of div.social-icon-container
     student_profile
   end

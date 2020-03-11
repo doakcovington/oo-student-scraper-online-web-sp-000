@@ -34,7 +34,7 @@ class Scraper
         student_profile[:blog] = links
       end
     end#end of div.social-icon-container
-    student_profile[:bio] = doc.css("div.bio-block.details-block").first.text
+    student_profile[:bio] = doc.css("div.bio-block.details-block p").first.text
     binding.pry
     student_profile
   end

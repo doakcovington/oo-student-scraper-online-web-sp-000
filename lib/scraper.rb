@@ -31,7 +31,7 @@ class Scraper
         student_profile[:linkedin] = links
       end
       if links.include?("bio")
-        student_profile[:bio]
+        student_profile[:bio] = links
       end
     end#end of div.social-icon-container
     student_profile
